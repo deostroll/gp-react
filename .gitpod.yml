@@ -1,0 +1,8 @@
+image: .gitpod.Dockerfile
+
+tasks:
+  - init: npm i
+    command: echo "Running from $PWD" && node server.js
+    
+ports:
+  - port: 3000
